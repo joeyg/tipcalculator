@@ -13,6 +13,8 @@
 		D887F8501AD613E20003844E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D887F84F1AD613E20003844E /* Images.xcassets */; };
 		D887F8531AD613E20003844E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D887F8511AD613E20003844E /* LaunchScreen.xib */; };
 		D887F85F1AD613E20003844E /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D887F85E1AD613E20003844E /* tipsTests.swift */; };
+		D8D1A80F1AD6356B00B1E5C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D1A80E1AD6356B00B1E5C2 /* SettingsViewController.swift */; };
+		D8D1A8111AD636FE00B1E5C2 /* SettingsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D1A8101AD636FE00B1E5C2 /* SettingsStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		D887F8581AD613E20003844E /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D887F85D1AD613E20003844E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D887F85E1AD613E20003844E /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		D8D1A80E1AD6356B00B1E5C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D8D1A8101AD636FE00B1E5C2 /* SettingsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				D887F84F1AD613E20003844E /* Images.xcassets */,
 				D887F8511AD613E20003844E /* LaunchScreen.xib */,
 				D887F8461AD613E20003844E /* Supporting Files */,
+				D8D1A80E1AD6356B00B1E5C2 /* SettingsViewController.swift */,
+				D8D1A8101AD636FE00B1E5C2 /* SettingsStorage.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			files = (
 				D887F84B1AD613E20003844E /* ViewController.swift in Sources */,
 				D887F8491AD613E20003844E /* AppDelegate.swift in Sources */,
+				D8D1A8111AD636FE00B1E5C2 /* SettingsStorage.swift in Sources */,
+				D8D1A80F1AD6356B00B1E5C2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +419,7 @@
 				D887F8641AD613E20003844E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D887F8651AD613E20003844E /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +428,7 @@
 				D887F8671AD613E20003844E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
