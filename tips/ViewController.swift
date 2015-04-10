@@ -43,6 +43,12 @@ class ViewController: UIViewController {
             var strVal = String(format:"%.2f", val)
             tipControl.setTitle(strVal, forSegmentAtIndex: Int(i))
         }
+        
+        billField.becomeFirstResponder()
+        
+        if !billField.text.isEmpty {
+            onEditingChanged(billField)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,15 +64,22 @@ class ViewController: UIViewController {
         
         var total = billAmount + tipAmount
         
-        tipLabel.text = "$\(tipAmount)"
-        totalLabel.text = "$\(total)"
+        var tipString = getCurrencyStringForDouble(tipAmount)
+        var totalString = getCurrencyStringForDouble(total)
         
-        tipLabel.text = String(format: "$%.2f", tipAmount)
-        totalLabel.text = String(format: "$%.2f", total)
+        tipLabel.text = tipString
+        totalLabel.text = totalString
     }
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
+    }
+    
+    func getCurrencyStringForDouble(number:Double) -> String? {
+        var numberFormatter = NSNumberFormatter()
+        numberFormatter.numberStyle = .CurrencyStyle
+        
+        return numberFormatter.stringFromNumber(number)
     }
 }
 
